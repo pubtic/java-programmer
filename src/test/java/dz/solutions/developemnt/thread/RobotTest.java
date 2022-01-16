@@ -10,12 +10,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class RobotTest {
 
     @Test
-    public void testRunable() {
+    public void testRunnable() {
         Robot robot1 = new Robot("Mobile");
         FactoryRobot robot2 = new FactoryRobot("Factory");
         ExecutorService service = null;
         try {
-            service = Executors.newFixedThreadPool(2);
+            service = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
             service.execute(robot1);
             service.execute(robot2);
         } finally {
@@ -27,5 +27,6 @@ public class RobotTest {
     public void testAvailableProcessors() {
         int processors = Runtime.getRuntime().availableProcessors();
         assertEquals(12, processors);
+
     }
 }
