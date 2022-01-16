@@ -1,0 +1,8 @@
+Stream : sequence of data it can be used only once
+stream in java is sequence of data a stream pipeline consists of the operation that run on a stream to produce a result
+
+source where the stream comes from
+intermediate operations transforms the stream into another one
+terminal operations produce a result
+
+create

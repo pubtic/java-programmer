@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sat Jan 08 17:50:32 CET 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.15.2.0 - (1873585): instance a816c00e-017e-3a99-4e88-00001e01ebd0 
+on database directory /home/mohammed-bouzerita/Projects/java-programmer/zoo with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@251a69d7 
+Loaded from file:/home/mohammed-bouzerita/.m2/repository/org/apache/derby/derby/10.15.2.0/derby-10.15.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=16.0.1+9-24
+user.dir=/home/mohammed-bouzerita/Projects/java-programmer
+os.name=Linux
+os.arch=amd64
+os.version=5.11.0-43-generic
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
