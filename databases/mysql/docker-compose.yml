@@ -1,6 +1,7 @@
 version: '3.3'
 services:
   db:
+    container_name: mysql_container
     image: mysql:5.7
     restart: always
     environment:
@@ -14,5 +15,17 @@ services:
       - '3306'
     volumes:
       - my-db:/var/lib/mysql
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin_container
+    links:
+      - db
+    environment:
+      PMA_HOST: mysql_container
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+    restart: always
+    ports:
+      - 8081:80
 volumes:
   my-db:
